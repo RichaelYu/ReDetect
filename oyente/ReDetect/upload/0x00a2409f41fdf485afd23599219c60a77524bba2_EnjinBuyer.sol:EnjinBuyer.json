@@ -1,0 +1,43 @@
+{
+ "evm_code_coverage": "67.6",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:115:7: Warning: UnexpectedEther Vulnerability.\n      require(sale != 0x0)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:103:5: Warning: UnexpectedEther Vulnerability.\n    require(sale != 0x0)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:100:5: Warning: UnexpectedEther Vulnerability.\n    require(msg.sender == developer)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:99:3: Warning: UnexpectedEther Vulnerability.\n  function purchase_tokens() {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:17:3: Warning: UnexpectedEther Vulnerability.\n  bool public refunded",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:13:3: Warning: UnexpectedEther Vulnerability.\n  mapping (address => uint256) public balances",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:15:3: Warning: UnexpectedEther Vulnerability.\n  bool public bought_tokens",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:22:3: Warning: UnexpectedEther Vulnerability.\n  address public sale = 0xc4740f71323129669424d1Ae06c42AEE99da30e2",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:16:3: Warning: UnexpectedEther Vulnerability.\n  bool public token_set",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:14:3: Warning: UnexpectedEther Vulnerability.\n  mapping (address => uint256) public balances_after_buy",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:88:40: Warning: UnexpectedEther Vulnerability.\n      uint256 contract_token_balance = myToken.balanceOf(address(this))",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:81:5: Warning: UnexpectedEther Vulnerability.\n    require(msg.sender != sale)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:73:3: Warning: UnexpectedEther Vulnerability.\n  function withdraw_token(address _token){\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:19:3: Warning: UnexpectedEther Vulnerability.\n  bool public kill_switch",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:24:3: Warning: UnexpectedEther Vulnerability.\n  uint256 public eth_minimum = 3235 ether",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:58:40: Warning: UnexpectedEther Vulnerability.\n      uint256 contract_token_balance = token.balanceOf(address(this))",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:57:7: Warning: UnexpectedEther Vulnerability.\n      require(token_set)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:50:5: Warning: UnexpectedEther Vulnerability.\n    require(msg.sender != sale)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:43:3: Warning: UnexpectedEther Vulnerability.\n  function personal_withdraw(){\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:18:3: Warning: UnexpectedEther Vulnerability.\n  uint256 public contract_eth_value",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:21:3: Warning: UnexpectedEther Vulnerability.\n  address public developer = 0x0639C169D9265Ca4B4DEce693764CdA8ea5F3882",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:27:5: Warning: UnexpectedEther Vulnerability.\n    require(msg.sender == developer)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:26:3: Warning: UnexpectedEther Vulnerability.\n  function set_token(address _token) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:34:5: Warning: UnexpectedEther Vulnerability.\n    require(msg.sender == developer)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:33:3: Warning: UnexpectedEther Vulnerability.\n  function set_refunded(bool _refunded) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:38:3: Warning: UnexpectedEther Vulnerability.\n  function activate_kill_switch(string password) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:23:3: Warning: UnexpectedEther Vulnerability.\n  ERC20 public token"
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

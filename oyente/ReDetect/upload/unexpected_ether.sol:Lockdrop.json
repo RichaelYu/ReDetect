@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "79.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:28:1: Warning: UnexpectedEther Vulnerability.\ncontract Lockdrop {\r\n^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:36:5: Warning: UnexpectedEther Vulnerability.\n    uint256 public LOCK_START_TIME",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:37:5: Warning: UnexpectedEther Vulnerability.\n    uint256 public LOCK_END_TIME",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:35:5: Warning: UnexpectedEther Vulnerability.\n    uint256 constant public LOCK_DROP_PERIOD = 1 days * 92",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:102:9: Warning: UnexpectedEther Vulnerability.\n        require(now <= LOCK_END_TIME)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:94:9: Warning: UnexpectedEther Vulnerability.\n        require(now >= LOCK_START_TIME)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:74:5: Warning: UnexpectedEther Vulnerability.\n    function signal(address contractAddr, uint32 nonce, bytes  edgewareAddr)\r\n    ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:63:25: Warning: UnexpectedEther Vulnerability.\n        Lock lockAddr = (new Lock).value(eth)(owner, unlockTime)"
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

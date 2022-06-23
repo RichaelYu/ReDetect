@@ -1,0 +1,1450 @@
+{
+ "0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:BasicToken.json": {
+  "evm_code_coverage": "99.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:Owned.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:Ownable.json": {
+  "evm_code_coverage": "99.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:Log.json": {
+  "evm_code_coverage": "34.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:Ownable.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:ArtexToken.json": {
+  "evm_code_coverage": "66.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:BasicToken.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:TokenReceivable.json": {
+  "evm_code_coverage": "97.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:Owned.json": {
+  "evm_code_coverage": "99.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:Whitelist.json": {
+  "evm_code_coverage": "97.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:ShiftSale.json": {
+  "evm_code_coverage": "74.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:TokenTrader.json": {
+  "evm_code_coverage": "88.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4ab5435c86ebe9262d642f945ca28bea499c1fe8_Forwarder.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:BancorBuyer.json": {
+  "evm_code_coverage": "96.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:Crowdsale.json": {
+  "evm_code_coverage": "81.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:ManualMigration.json": {
+  "evm_code_coverage": "89.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:ProofFund.json": {
+  "evm_code_coverage": "60.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:PendingContributions.json": {
+  "evm_code_coverage": "98.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:x888.json": {
+  "evm_code_coverage": "40.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:Owned.json": {
+  "evm_code_coverage": "99.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:PRIVATE_ETH_CELL.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract1/0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:Haltable.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:Haltable.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:ProofToken.json": {
+  "evm_code_coverage": "75.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:strings.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:ETH_VAULT.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:35:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract1/0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:38:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:Token.json": {
+  "evm_code_coverage": "76.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:Ownable.json": {
+  "evm_code_coverage": "99.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:SafeMathLib.json": {
+  "evm_code_coverage": "99.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:owned.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:Owned.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:Ownable.json": {
+  "evm_code_coverage": "99.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:PERSONAL_BANK.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract1/0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:SafeMathLib.json": {
+  "evm_code_coverage": "98.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:WalletSimple.json": {
+  "evm_code_coverage": "26.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:EquioGenesis.json": {
+  "evm_code_coverage": "2.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:Destructible.json": {
+  "evm_code_coverage": "98.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:SafeMathLib.json": {
+  "evm_code_coverage": "99.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:Proof.json": {
+  "evm_code_coverage": "49.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:Ownable.json": {
+  "evm_code_coverage": "99.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:TokenTrader.json": {
+  "evm_code_coverage": "88.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:PrivateDeposit.json": {
+  "evm_code_coverage": "98.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:45:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract1/0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:48:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:LogFile.json": {
+  "evm_code_coverage": "34.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:Equio.json": {
+  "evm_code_coverage": "86.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:LogFile.json": {
+  "evm_code_coverage": "34.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:Ownable.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:Owned.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:WalletSimple.json": {
+  "evm_code_coverage": "26.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:Owned.json": {
+  "evm_code_coverage": "69.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:x888.json": {
+  "evm_code_coverage": "40.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:GenericCall.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:Owned.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:Log.json": {
+  "evm_code_coverage": "34.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:BasicToken.json": {
+  "evm_code_coverage": "99.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:Crowdsale.json": {
+  "evm_code_coverage": "91.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:Ownable.json": {
+  "evm_code_coverage": "99.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:Burner.json": {
+  "evm_code_coverage": "98.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:Stateful.json": {
+  "evm_code_coverage": "98.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:Haltable.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:Stake.json": {
+  "evm_code_coverage": "69.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:TokenTraderFactory.json": {
+  "evm_code_coverage": "29.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:FunFairSale.json": {
+  "evm_code_coverage": "98.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:AutomobileCyberchainToken.json": {
+  "evm_code_coverage": "88.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract1/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:195:21: Warning: Re-Entrancy Vulnerability.\n            require(msg.sender.call.value(msg.value - value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0d8603a39663a29134a8957722a059594e89fa53_RenderTokenInvestment1.sol:RenderTokenInvestment1.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:owned.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:SafeMath.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:DividendDistributor.json": {
+  "evm_code_coverage": "90.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:WhitelistedGateway.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:ProofVote.json": {
+  "evm_code_coverage": "67.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:Haltable.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:Fee.json": {
+  "evm_code_coverage": "65.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:StandardToken.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:SafeMathLib.json": {
+  "evm_code_coverage": "99.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:BasicToken.json": {
+  "evm_code_coverage": "99.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:BackToLife.json": {
+  "evm_code_coverage": "4.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:MyWill.json": {
+  "evm_code_coverage": "24.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:SFTToken.json": {
+  "evm_code_coverage": "39.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:SENSToken.json": {
+  "evm_code_coverage": "40.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:EnjinBuyer.json": {
+  "evm_code_coverage": "91.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:TokenTraderFactory.json": {
+  "evm_code_coverage": "29.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:Validating.json": {
+  "evm_code_coverage": "100.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:TokenMigration.json": {
+  "evm_code_coverage": "62.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:Token.json": {
+  "evm_code_coverage": "99.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ }
+}

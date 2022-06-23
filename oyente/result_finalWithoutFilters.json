@@ -1,0 +1,913 @@
+{
+ "0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:PresaleToken.json": {
+  "evm_code_coverage": "69.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:179:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract2/0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:173:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x66a8cc4cddd86a3d6ac34f553dd250983fee3fd4_BuilderInvoice.sol:Invoice.json": {
+  "evm_code_coverage": "76.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x66a8cc4cddd86a3d6ac34f553dd250983fee3fd4_BuilderInvoice.sol:109:18: Warning: Re-Entrancy Vulnerability.\n            if (!comission.process.value(value)(beneficiary)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x897c6cf1996edfb2126703dcecf038df646298fa_TradersWallet.sol:TradersWallet.json": {
+  "evm_code_coverage": "98.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x897c6cf1996edfb2126703dcecf038df646298fa_TradersWallet.sol:120:9: Warning: Re-Entrancy Vulnerability.\n        ethDelta.deposit.value(amount)()",
+    "/home/richael/oyente-master/oyente/contract2/0x897c6cf1996edfb2126703dcecf038df646298fa_TradersWallet.sol:82:17: Warning: Re-Entrancy Vulnerability.\n        require(_to.call.value(_value)(_data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x38bbe5d0926122900dd50741b051bf323cd401ae_BETSale.sol:BETSale.json": {
+  "evm_code_coverage": "97.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x38bbe5d0926122900dd50741b051bf323cd401ae_BETSale.sol:79:7: Warning: Re-Entrancy Vulnerability.\n      token.proxyPayment.value(this.balance)(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x627Fa62CCbb1C1b04fFAECd72a53e37fC0E17839_TokenBank.sol:TokenBank.json": {
+  "evm_code_coverage": "99.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x627Fa62CCbb1C1b04fFAECd72a53e37fC0E17839_TokenBank.sol:87:16: Warning: Re-Entrancy Vulnerability.\n            if(_addr.call.value(_wei)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x17e5629660c3ee2ac68498e24e8607a712ba64ff_PinProtocolInvestment.sol:PinProtocolInvestment.json": {
+  "evm_code_coverage": "86.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x17e5629660c3ee2ac68498e24e8607a712ba64ff_PinProtocolInvestment.sol:96:13: Warning: Re-Entrancy Vulnerability.\n    require(msg.sender.call.gas(gas).value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x491ff72e7b511123b6a6c074fbaef158546982fe_FunFairSale.sol:FunFairSale.json": {
+  "evm_code_coverage": "98.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x491ff72e7b511123b6a6c074fbaef158546982fe_FunFairSale.sol:76:14: Warning: Re-Entrancy Vulnerability.\n        if (!owner.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x97ee19d8c8b2d607af236d8beddf9f45aca99585_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x97ee19d8c8b2d607af236d8beddf9f45aca99585_PreICOProxyBuyer.sol:1014:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x97ee19d8c8b2d607af236d8beddf9f45aca99585_PreICOProxyBuyer.sol:960:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x97ee19d8c8b2d607af236d8beddf9f45aca99585_PreICOProxyBuyer.sol:1017:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:Private_Bank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:32:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:35:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x89c1b3807d4c67df034fffb62f3509561218d30b_TownCrier.sol:TownCrier.json": {
+  "evm_code_coverage": "72.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x89c1b3807d4c67df034fffb62f3509561218d30b_TownCrier.sol:88:18: Warning: Re-Entrancy Vulnerability.\n            if (!requests[0].requester.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x49b84450a9a56081ce570920aa578c35e0b2461f_TokenToken.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x49b84450a9a56081ce570920aa578c35e0b2461f_TokenToken.sol:248:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x84a1467d6b3c6ba22fabf6a3851c287c9c55f298_UpgradeEventCompact.sol:Nutz.json": {
+  "evm_code_coverage": "80.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x84a1467d6b3c6ba22fabf6a3851c287c9c55f298_UpgradeEventCompact.sol:665:5: Warning: Re-Entrancy Vulnerability.\n    PullPayInterface(_pullAddr).asyncSend.value(_amountWei)(_dest)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x41aef9b47f6e37de66e34ce073023b36f1823b2a_IChain.sol:IChain.json": {
+  "evm_code_coverage": "90.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x41aef9b47f6e37de66e34ce073023b36f1823b2a_IChain.sol:222:11: Warning: Re-Entrancy Vulnerability.\n\t\trequire(msg.sender.call.value(amount)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x451f94927c0c726c2560106da3308d2a204f5d1f_LZLCoin.sol:LZLCoin.json": {
+  "evm_code_coverage": "90.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x451f94927c0c726c2560106da3308d2a204f5d1f_LZLCoin.sol:136:14: Warning: Re-Entrancy Vulnerability.\n        if (!_pd.call.value(_etA)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:ETH_FUND.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:37:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:40:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x68c7147205a8beb9d99fd19908b93462cdffc60d_FirstContract.sol:FirstContract.json": {
+  "evm_code_coverage": "45.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x68c7147205a8beb9d99fd19908b93462cdffc60d_FirstContract.sol:321:15: Warning: Re-Entrancy Vulnerability.\n        if (!(addr.call.gas(safeGas).value(value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0694d5eda9d49d371f47aaf8f94dbcfe44d54405_IAMEToken.sol:IAMEToken.json": {
+  "evm_code_coverage": "89.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x0694d5eda9d49d371f47aaf8f94dbcfe44d54405_IAMEToken.sol:276:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x74c83a7f46b9c7421ff74fd3161e09f8b16f36f2_x888.sol:TokenTrader.json": {
+  "evm_code_coverage": "87.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x74c83a7f46b9c7421ff74fd3161e09f8b16f36f2_x888.sol:522:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x73bbb94cb75ba2627fef42668b2881412b0d2749_BackToLife.sol:MyWill.json": {
+  "evm_code_coverage": "27.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x73bbb94cb75ba2627fef42668b2881412b0d2749_BackToLife.sol:923:10: Warning: Re-Entrancy Vulnerability.\n        _to.call.value(_value)(_data);"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x608d02d535b56a861d1eb44b7e3c990ebf244f65_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x608d02d535b56a861d1eb44b7e3c990ebf244f65_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x608d02d535b56a861d1eb44b7e3c990ebf244f65_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:PrivateBank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:39:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:42:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:PENNY_BY_PENNY.json": {
+  "evm_code_coverage": "99.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:56:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:59:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x53a54c442583d2e844733f179d142c32f3c004b7_Preallocation.sol:Preallocation.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x53a54c442583d2e844733f179d142c32f3c004b7_Preallocation.sol:113:9: Warning: Re-Entrancy Vulnerability.\n        crowdsale.buyTokens.value(bal)(investor)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2138ffe292fd0953f7fe2569111246e4de9ff1dc_MarketPrice.sol:MarketPrice.json": {
+  "evm_code_coverage": "81.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x2138ffe292fd0953f7fe2569111246e4de9ff1dc_MarketPrice.sol:111:17: Warning: Re-Entrancy Vulnerability.\n        require(_to.call.value(_value)(_data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x49edf201c1e139282643d5e7c6fb0c7219ad1db7_ICO.sol:ICO.json": {
+  "evm_code_coverage": "82.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x49edf201c1e139282643d5e7c6fb0c7219ad1db7_ICO.sol:664:15: Warning: Re-Entrancy Vulnerability.\n        if ( !_a.call.value(safebalance(amt))()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x83a216a7d51f9698fce51364d6a258d725e55b54_RenderTokenInvestment1.sol:RenderTokenInvestment1.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x83a216a7d51f9698fce51364d6a258d725e55b54_RenderTokenInvestment1.sol:99:13: Warning: Re-Entrancy Vulnerability.\n    require(msg.sender.call.gas(gas).value(address(this).balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x96ddcf85c3798f01dae5212c6984f9cc467111f6_SimpleSaleToken.sol:SimpleSaleToken.json": {
+  "evm_code_coverage": "66.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x96ddcf85c3798f01dae5212c6984f9cc467111f6_SimpleSaleToken.sol:231:10: Warning: Re-Entrancy Vulnerability.\n    if (!beneficiary.call.gas(contractSendGas).value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x60aa9e02dd75407a9fef5c8437ae8852b6318e58_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x60aa9e02dd75407a9fef5c8437ae8852b6318e58_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x60aa9e02dd75407a9fef5c8437ae8852b6318e58_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:OasisDirectProxy.json": {
+  "evm_code_coverage": "95.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:90:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(wethAmt)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x55c44fbad82686afb0ca41cefb8d086cb937b2e6_FunFairSale.sol:FunFairSale.json": {
+  "evm_code_coverage": "98.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x55c44fbad82686afb0ca41cefb8d086cb937b2e6_FunFairSale.sol:77:14: Warning: Re-Entrancy Vulnerability.\n        if (!owner.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x85c548a176f86bcaad45e96a7758538ddaba3a65_FirstContract.sol:FirstContract.json": {
+  "evm_code_coverage": "44.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x85c548a176f86bcaad45e96a7758538ddaba3a65_FirstContract.sol:327:15: Warning: Re-Entrancy Vulnerability.\n        if (!(addr.call.gas(safeGas).value(value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x903db1bf91cc22964cccfbe1a1875eb3b989f32a_TrustWalletFactory.sol:TrustWallet.json": {
+  "evm_code_coverage": "73.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x903db1bf91cc22964cccfbe1a1875eb3b989f32a_TrustWalletFactory.sol:109:17: Warning: Re-Entrancy Vulnerability.\n        require(transaction.destination.call.value(transaction.value)(transaction.data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:OpenLongevityPresale.json": {
+  "evm_code_coverage": "69.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:179:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract2/0x14cf6193935b17fc72649ba420fdd5bfdf1f0001_OpenLongevityPresale.sol:173:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:PrivateBank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:31:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:34:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x88e2f006f55009cdcdb1985bafecf616c51c3688_BackToLife.sol:MyWill.json": {
+  "evm_code_coverage": "30.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x88e2f006f55009cdcdb1985bafecf616c51c3688_BackToLife.sol:929:10: Warning: Re-Entrancy Vulnerability.\n        _to.call.value(_value)(_data);"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x299bda4202a1e00cf2971bb863aa11be466a6c4c_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x299bda4202a1e00cf2971bb863aa11be466a6c4c_PreICOProxyBuyer.sol:1001:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x299bda4202a1e00cf2971bb863aa11be466a6c4c_PreICOProxyBuyer.sol:947:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x299bda4202a1e00cf2971bb863aa11be466a6c4c_PreICOProxyBuyer.sol:1004:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:ProxyCreationAndExecute.json": {
+  "evm_code_coverage": "96.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:90:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(wethAmt)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:OpenLongevityPresale.json": {
+  "evm_code_coverage": "79.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:198:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract2/0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:192:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x21ca8ee818f008692d3a6abd1a1beda5aaecf0e3_TokenTraderFactory.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x21ca8ee818f008692d3a6abd1a1beda5aaecf0e3_TokenTraderFactory.sol:242:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:BANK_SAFE.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x325f89386b72087530440e0bceb8490d78b47f21_Mergex.sol:Mergex.json": {
+  "evm_code_coverage": "34.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x325f89386b72087530440e0bceb8490d78b47f21_Mergex.sol:291:3: Warning: Re-Entrancy Vulnerability.\n\t\tEthWrapper_Interface(EtherWrapper).wrapperChanged.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8_CATToken.sol:CATToken.json": {
+  "evm_code_coverage": "85.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x56ba2Ee7890461f463F7be02aAC3099f6d5811A8_CATToken.sol:324:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x594f1b4fa77be53c36001b2a207e58d8bcbf3d4f_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x594f1b4fa77be53c36001b2a207e58d8bcbf3d4f_PreICOProxyBuyer.sol:1001:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x594f1b4fa77be53c36001b2a207e58d8bcbf3d4f_PreICOProxyBuyer.sol:947:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x594f1b4fa77be53c36001b2a207e58d8bcbf3d4f_PreICOProxyBuyer.sol:1004:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x45f0f40297df736fe33efbf703d6ff287cb29cf7_Whitelist.sol:PendingContributions.json": {
+  "evm_code_coverage": "98.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x45f0f40297df736fe33efbf703d6ff287cb29cf7_Whitelist.sol:172:3: Warning: Re-Entrancy Vulnerability.\n\t\tgateway.fund.value(toTransfer)(contributor)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x86ca189a5e189513b52c2018ca9e4918cffeb54b_E4Lava.sol:E4Lava.json": {
+  "evm_code_coverage": "70.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x86ca189a5e189513b52c2018ca9e4918cffeb54b_E4Lava.sol:229:30: Warning: Re-Entrancy Vulnerability.\n                        if (!owner.call.gas(rwGas).value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:PresaleToken.json": {
+  "evm_code_coverage": "79.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:198:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract2/0x179a303c1fdff0ffbda6a68b384787621b78ee84_OpenLongevityPresale.sol:192:18: Warning: Re-Entrancy Vulnerability.\n        require(presaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x37dad2f4f477b085c5e91a10d6a5eab6dab6a445_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x37dad2f4f477b085c5e91a10d6a5eab6dab6a445_PreICOProxyBuyer.sol:1059:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x37dad2f4f477b085c5e91a10d6a5eab6dab6a445_PreICOProxyBuyer.sol:996:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x37dad2f4f477b085c5e91a10d6a5eab6dab6a445_PreICOProxyBuyer.sol:1062:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x18d70bd7bdfa7e424271fe25b527ee0250db5c90_ICOBuyer.sol:ICOBuyer.json": {
+  "evm_code_coverage": "98.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x18d70bd7bdfa7e424271fe25b527ee0250db5c90_ICOBuyer.sol:172:12: Warning: Re-Entrancy Vulnerability.\n    assert(crowdSale.call.value(purchaseAmount)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x22a97c80d7e0a9ae616737e3b8b531248f4ef91d_Campaign.sol:Campaign.json": {
+  "evm_code_coverage": "33.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x22a97c80d7e0a9ae616737e3b8b531248f4ef91d_Campaign.sol:631:23: Warning: Re-Entrancy Vulnerability.\n        require(beneficiary.call.value(_amount)());\n        ^\nSpanning multiple lines."
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x72bf3030e276a96539143551bd8f91aff699bf7c_LotteryGameLogic.sol:LotteryGameLogic.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x72bf3030e276a96539143551bd8f91aff699bf7c_LotteryGameLogic.sol:193:9: Warning: Re-Entrancy Vulnerability.\n        roundFactory.createRound.value(this.balance)(saltHash, saltNHash)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2084c73cdaf9766525a125e44741dfde8d3daa02_OlyseumPurchase.sol:OlyseumPurchase.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x2084c73cdaf9766525a125e44741dfde8d3daa02_OlyseumPurchase.sol:104:13: Warning: Re-Entrancy Vulnerability.\n    require(msg.sender.call.gas(gas).value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x58fcf11196abaeefdf23198ec4ec9c5237963e17_BullTokenCrowdsale.sol:BullTokenRefundVault.json": {
+  "evm_code_coverage": "99.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x58fcf11196abaeefdf23198ec4ec9c5237963e17_BullTokenCrowdsale.sol:703:5: Warning: Re-Entrancy Vulnerability.\n    wallet.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x575a9368ccbc951986bb25412876be1a3218c883_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x575a9368ccbc951986bb25412876be1a3218c883_PreICOProxyBuyer.sol:1014:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x575a9368ccbc951986bb25412876be1a3218c883_PreICOProxyBuyer.sol:960:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x575a9368ccbc951986bb25412876be1a3218c883_PreICOProxyBuyer.sol:1017:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x858c9eaf3ace37d2bedb4a1eb6b8805ffe801bba_DividendDistributorv3.sol:DividendDistributorv3.json": {
+  "evm_code_coverage": "90.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x858c9eaf3ace37d2bedb4a1eb6b8805ffe801bba_DividendDistributorv3.sol:53:14: Warning: Re-Entrancy Vulnerability.\n        if(! target.call.value(amount)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x14a592651ed820e704a32ca1ffd4a646265c0a92_MergeCoin.sol:MergeCoin.json": {
+  "evm_code_coverage": "90.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x14a592651ed820e704a32ca1ffd4a646265c0a92_MergeCoin.sol:137:15: Warning: Re-Entrancy Vulnerability.\n        if (!_pd.call.value(_etA)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x69ebb43389b3a7fbdc41ea21cf83ff432e952949_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x69ebb43389b3a7fbdc41ea21cf83ff432e952949_PreICOProxyBuyer.sol:1014:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x69ebb43389b3a7fbdc41ea21cf83ff432e952949_PreICOProxyBuyer.sol:960:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract2/0x69ebb43389b3a7fbdc41ea21cf83ff432e952949_PreICOProxyBuyer.sol:1017:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x40ee585d2016b8e515af7ee9c219d5d445422ffd_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "82.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x40ee585d2016b8e515af7ee9c219d5d445422ffd_PreICOProxyBuyer.sol:1063:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract2/0x40ee585d2016b8e515af7ee9c219d5d445422ffd_PreICOProxyBuyer.sol:998:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x325f89386b72087530440e0bceb8490d78b47f21_Mergex.sol:EtherStore.json": {
+  "evm_code_coverage": "29.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x325f89386b72087530440e0bceb8490d78b47f21_Mergex.sol:291:3: Warning: Re-Entrancy Vulnerability.\n\t\tEthWrapper_Interface(EtherWrapper).wrapperChanged.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x22EbaB2fBA4A1648Aa8A0bdAeA975738A7810E24_ICOBuyer.sol:ICOBuyer.json": {
+  "evm_code_coverage": "98.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x22EbaB2fBA4A1648Aa8A0bdAeA975738A7810E24_ICOBuyer.sol:162:12: Warning: Re-Entrancy Vulnerability.\n    assert(crowdSale.call.value(purchaseAmount)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "99.2",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:64:1: Warning: UnexpectedEther Vulnerability.\nlibrary SafeMathLib {\n^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:84:21: Warning: UnexpectedEther Vulnerability.\n    if (!assertion) throw"
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

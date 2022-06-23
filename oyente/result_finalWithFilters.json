@@ -1,0 +1,158 @@
+{
+ "0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:Private_Bank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:32:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x95d34980095380851902ccd9a1fb4c813c2cb639_Private_Bank.sol:35:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x451f94927c0c726c2560106da3308d2a204f5d1f_LZLCoin.sol:LZLCoin.json": {
+  "evm_code_coverage": "90.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x451f94927c0c726c2560106da3308d2a204f5d1f_LZLCoin.sol:136:14: Warning: Re-Entrancy Vulnerability.\n        if (!_pd.call.value(_etA)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:ETH_FUND.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:37:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x941d225236464a25eb18076df7da6a91d0f95e9e_ETH_FUND.sol:40:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:PrivateBank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:39:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x463f235748bc7862DEaA04d85b4B16AC8faFEF39_PrivateBank.sol:42:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:PENNY_BY_PENNY.json": {
+  "evm_code_coverage": "99.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:56:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x96EDBe868531BD23a6C05e9d0C424ea64fb1B78B_PENNY_BY_PENNY.sol:59:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:OasisDirectProxy.json": {
+  "evm_code_coverage": "95.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:90:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(wethAmt)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:PrivateBank.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:31:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_PrivateBank.sol:34:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:ProxyCreationAndExecute.json": {
+  "evm_code_coverage": "96.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x793ebbe21607e4f04788f89c7a9b97320773ec59_ProxyCreationAndExecute.sol:90:17: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.value(wethAmt)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:BANK_SAFE.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract2/0x561EAc93C92360949Ab1f1403323E6db345CBF31_BANK_SAFE.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x14a592651ed820e704a32ca1ffd4a646265c0a92_MergeCoin.sol:MergeCoin.json": {
+  "evm_code_coverage": "90.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract2/0x14a592651ed820e704a32ca1ffd4a646265c0a92_MergeCoin.sol:137:15: Warning: Re-Entrancy Vulnerability.\n        if (!_pd.call.value(_etA)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ }
+}

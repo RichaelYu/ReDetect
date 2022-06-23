@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "40.4",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [],
+  "gas_hardcoded": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:280:29: Warning: GasHardcoded Vulnerability.\n            owner         = t.owner()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:281:29: Warning: GasHardcoded Vulnerability.\n            asset         = t.asset()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:282:29: Warning: GasHardcoded Vulnerability.\n            buyPrice      = t.buyPrice()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:283:29: Warning: GasHardcoded Vulnerability.\n            sellPrice     = t.sellPrice()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:284:29: Warning: GasHardcoded Vulnerability.\n            units         = t.units()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:285:29: Warning: GasHardcoded Vulnerability.\n            buysTokens    = t.buysTokens()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:286:29: Warning: GasHardcoded Vulnerability.\n            sellsTokens   = t.sellsTokens()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:309:29: Warning: GasHardcoded Vulnerability.\n            owner         = t.owner()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:310:29: Warning: GasHardcoded Vulnerability.\n            asset         = t.asset()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:311:29: Warning: GasHardcoded Vulnerability.\n            buyPrice      = t.buyPrice()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:312:29: Warning: GasHardcoded Vulnerability.\n            sellPrice     = t.sellPrice()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:313:29: Warning: GasHardcoded Vulnerability.\n            units         = t.units()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:314:29: Warning: GasHardcoded Vulnerability.\n            buysTokens    = t.buysTokens()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:315:29: Warning: GasHardcoded Vulnerability.\n            sellsTokens   = t.sellsTokens()"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

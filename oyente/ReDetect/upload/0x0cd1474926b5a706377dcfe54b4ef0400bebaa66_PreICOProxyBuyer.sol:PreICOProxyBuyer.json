@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "34.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [],
+  "gas_hardcoded": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:983:12: Warning: GasHardcoded Vulnerability.\n    return crowdsale.token()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1127:9: Warning: GasHardcoded Vulnerability.\n    if(!crowdsale.isCrowdsale()"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

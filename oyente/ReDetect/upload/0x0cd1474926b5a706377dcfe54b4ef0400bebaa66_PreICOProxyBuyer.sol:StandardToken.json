@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "72.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:781:1: Warning: UnexpectedEther Vulnerability.\ncontract StandardToken is ERC20, SafeMath {\n^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:840:64: Warning: UnexpectedEther Vulnerability.\n    if ((_value != 0) && (allowed[msg.sender][_spender] != 0)) throw",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:834:3: Warning: UnexpectedEther Vulnerability.\n  function approve(address _spender, uint _value) returns (bool success) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:221:3: Warning: UnexpectedEther Vulnerability.\n  uint public totalSupply",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:47:7: Warning: UnexpectedEther Vulnerability.\n      throw",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:817:3: Warning: UnexpectedEther Vulnerability.\n  function transferFrom(address _from, address _to, uint _value) returns (bool success) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:830:3: Warning: UnexpectedEther Vulnerability.\n  function balanceOf(address _owner) constant returns (uint balance) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:805:8: Warning: UnexpectedEther Vulnerability.\n       throw",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:810:3: Warning: UnexpectedEther Vulnerability.\n  function transfer(address _to, uint _value) onlyPayloadSize(2 * 32) returns (bool success) {\n  ^\nSpanning multiple lines.",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:857:3: Warning: UnexpectedEther Vulnerability.\n  function addApproval(address _spender, uint _addedValue)\n  ^\nSpanning multiple lines."
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

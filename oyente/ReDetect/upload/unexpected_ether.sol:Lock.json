@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "62.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/unexpected_ether.sol:19:22: Warning: UnexpectedEther Vulnerability.\n            case 0 { revert"
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/mCSS.css">
+</head>
+<body style="margin: 30px auto; width: 560px">
+<h2 style="margin: 10px 120px;">以太坊智能合约漏洞检测系统</h2>
+<ul id="tab">
+    <li><a href="#content1">Solidity源码</a></li>
+    <li><a href="#content2">字节码</a></li>
+    <!-- <li><a href="#content3" >电视剧</a></li> -->
+</ul>
+<div id="content">
+    <div id="content1">
+        <form action="/solidity/" method="post" enctype="multipart/form-data" style="margin: 40px 150px;">
+            <p><input type="file" name="upload"></p>
+            <p><input type="submit" value="检测"></p>
+        </form>
+
+    </div>
+
+    <div id="content2">
+        <form action="/evm/" method="post" enctype="multipart/form-data" style="margin: 40px 150px;">
+            <p><input type="file" name="upload"></p>
+            <p><input type="submit" value="检测"></p>
+        </form>
+    </div>
+
+    <!-- <div id="content3">热门电视剧推荐：<br>《三生三世》<br> 《我们的少年时代》</div> -->
+</div>
+<div style="margin: 170px 0px">
+    <h3><b>检测结果 </b></h3>
+    <textarea class="form-control" id="result" rows="0" style="height:200px; width: 560px">{{ result }}
+    </textarea>
+</div>
+<script src="/static/js/mJS.js"></script>
+</body>
+</html>

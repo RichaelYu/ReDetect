@@ -1,0 +1,13 @@
+{
+ "evm_code_coverage": "100.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "gas_hardcoded": false,
+  "callstack": false,
+  "money_concurrency": false,
+  "time_dependency": false,
+  "reentrancy": false,
+  "unexpected_ether": true
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "evm_code_coverage": "88.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [],
+  "gas_hardcoded": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:530:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:534:29: Warning: GasHardcoded Vulnerability.\n            uint can_sell = ERCTW(asset).balanceOf(address(this))",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:551:23: Warning: GasHardcoded Vulnerability.\n        else require (msg.sender.send(msg.value)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:506:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:510:20: Warning: GasHardcoded Vulnerability.\n            return owner.send(ethers)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:458:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:488:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:489:27: Warning: GasHardcoded Vulnerability.\n        require (owner == toTokenTrader.owner()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:489:61: Warning: GasHardcoded Vulnerability.\n        require (owner == toTokenTrader.owner() && asset == toTokenTrader.asset()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:491:16: Warning: GasHardcoded Vulnerability.\n        return ERCTW(asset).transfer(toTokenTrader, tokens)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:128:41: Warning: GasHardcoded Vulnerability.\n        require (msg.sender == owner && TokenTrader(msg.sender).owner()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:472:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:519:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:520:27: Warning: GasHardcoded Vulnerability.\n        require (owner == toTokenTrader.owner()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:520:61: Warning: GasHardcoded Vulnerability.\n        require (owner == toTokenTrader.owner() && asset == toTokenTrader.asset()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:524:13: Warning: GasHardcoded Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:499:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:501:16: Warning: GasHardcoded Vulnerability.\n        return ERCTW(tokenAddress).transfer(owner, tokens)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:478:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:480:16: Warning: GasHardcoded Vulnerability.\n        return ERCTW(asset).transfer(owner, tokens)",
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:556:17: Warning: GasHardcoded Vulnerability.\n        require(ERCTW(exchange).transferFrom(owner, exchange, exchFee)"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

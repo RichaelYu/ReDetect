@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "100.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "unexpected_ether": [
+   "/home/richael/oyente-master/oyente/ReDetect/upload/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:4:1: Warning: UnexpectedEther Vulnerability.\ncontract SafeMath {\n^\nSpanning multiple lines."
+  ],
+  "gas_hardcoded": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ }
+}

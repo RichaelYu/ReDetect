@@ -1,0 +1,1395 @@
+{
+ "0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:76:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(this.balance)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:48:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(msg.value)(msg.data)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x0feb3ce318e239a230383fd3484fa1018e1efaa0_Forwarder.sol:76:10: Warning: Re-Entrancy Vulnerability.\n    if (!parentAddress.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:874:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:973:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumLimit = 1\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:865:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:1083:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:1001:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:1102:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:1001:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:947:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x0e412af67f6c41e9209da8b8638d65bb883ddf5a_PreICOProxyBuyer.sol:1004:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:971:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:855:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:864:3: Warning: Integer Overflow.\n  address[] public investors"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:1087:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:1008:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:1106:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:1008:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:945:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x2c41e86b5c19af863b774e0a7146923fe3952dcf_PreICOProxyBuyer.sol:1011:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:ArtexToken.json": {
+  "evm_code_coverage": "66.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:199:30: Warning: Integer Overflow.\n            } else if (now < crowdsaleStartTime + 1 weeks\nInteger Overflow occurs if:\n    state = 4384504911992708754611054498148849058967797628928\n    crowdsaleStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129553920\n    collectedUSDWEI = 0\n    crowdsaleFinishTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalLimitUSDWEI = 1",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:201:30: Warning: Integer Overflow.\n            } else if (now < crowdsaleStartTime + 2 weeks\nInteger Overflow occurs if:\n    state = 4384504911992708754611054498148849058967797628928\n    crowdsaleStartTime = 115792089237316195423570985008687907853269984665640564039457584007913129553920\n    collectedUSDWEI = 0\n    crowdsaleFinishTime = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    totalLimitUSDWEI = 1",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:173:9: Warning: Integer Overflow.\n        btcDep.btcPriceUSDWEI\nInteger Overflow occurs if:\n    state = 1461501637330902918203684832716283019655932542976\n    collectedUSDWEI = 0\n    crowdsaleFinishTime = 1\n    totalLimitUSDWEI = 1\n    owner = 0",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:174:9: Warning: Integer Overflow.\n        btcDep.investor\nInteger Overflow occurs if:\n    state = 1461501637330902918203684832716283019655932542976\n    collectedUSDWEI = 0\n    crowdsaleFinishTime = 1\n    totalLimitUSDWEI = 1\n    owner = 0",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:128:5: Warning: Integer Overflow.\n    mapping(address => Investor) public investors",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:126:5: Warning: Integer Overflow.\n    mapping(bytes32 => BtcDeposit) public btcDeposits"
+   ],
+   "callstack": [
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:152:27: Warning: Callstack Depth Attack Vulnerability.\n            bool isSent = msg.sender.call.gas(3000000).value(weiToReturn)()",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:226:23: Warning: Callstack Depth Attack Vulnerability.\n        bool isSent = beneficiary.call.gas(3000000).value(this.balance)()",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:285:23: Warning: Callstack Depth Attack Vulnerability.\n        bool isSent = beneficiary.call.gas(3000000).value(this.balance)()"
+   ],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:331:23: Warning: Transaction-Ordering Dependency.\n        bool isSent = beneficiary.call.gas(3000000).value(_value)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:331:23: Warning: Transaction-Ordering Dependency.\n        bool isSent = beneficiary.call.gas(3000000).value(_value)()"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:331:23: Warning: Re-Entrancy Vulnerability.\n        bool isSent = beneficiary.call.gas(3000000).value(_value)()",
+    "/home/richael/oyente-master/oyente/contract/0x3F500A7e3783FBd228DDB894DE2Db110eED83A5b_ArtexToken.sol:226:23: Warning: Re-Entrancy Vulnerability.\n        bool isSent = beneficiary.call.gas(3000000).value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:910:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1009:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumLimit = 1\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:901:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1116:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1037:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1135:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1037:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:983:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x0cd1474926b5a706377dcfe54b4ef0400bebaa66_PreICOProxyBuyer.sol:1040:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:ShiftSale.json": {
+  "evm_code_coverage": "74.1",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:80:26: Warning: Integer Underflow.\n            FundTransfer(msg.value - fee\nInteger Underflow occurs if:\n    fee = 220855883098258437762299883093069775605608421070399556285324774697336832"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:18:5: Warning: Integer Overflow.\n    address[] public owners",
+    "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:118:5: Warning: Integer Overflow.\n    function refundMany(address[] _to, uint256[] _value)\n    ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    _to = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:79:12: Warning: Transaction-Ordering Dependency.\n        if(crowdSale.shiftSalePurchase.value(msg.value - fee)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:113:9: Warning: Transaction-Ordering Dependency.\n        _to.transfer(_value)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6b1fB08639aCEc6ED415BaCaB6453B523AEc7D4B_ShiftSale.sol:79:12: Warning: Re-Entrancy Vulnerability.\n        if(crowdSale.shiftSalePurchase.value(msg.value - fee)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:TokenTrader.json": {
+  "evm_code_coverage": "88.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:550:23: Warning: Transaction-Ordering Dependency.\n        else require (msg.sender.send(msg.value)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:509:20: Warning: Transaction-Ordering Dependency.\n            return owner.send(ethers)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1fdf98b7a206b0112b54f5173c0e72899a4b5a20_x888.sol:523:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4ab5435c86ebe9262d642f945ca28bea499c1fe8_Forwarder.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4ab5435c86ebe9262d642f945ca28bea499c1fe8_Forwarder.sol:76:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(this.balance)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4ab5435c86ebe9262d642f945ca28bea499c1fe8_Forwarder.sol:48:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(msg.value)(msg.data)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x4ab5435c86ebe9262d642f945ca28bea499c1fe8_Forwarder.sol:76:10: Warning: Re-Entrancy Vulnerability.\n    if (!parentAddress.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:BancorBuyer.json": {
+  "evm_code_coverage": "96.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:77:7: Warning: Integer Overflow.\n      balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    bought_tokens = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:54:5: Warning: Integer Overflow.\n    reward += msg.value\nInteger Overflow occurs if:\n    reward = 1"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:95:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(msg.value)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:48:5: Warning: Transaction-Ordering Dependency.\n    msg.sender.transfer(amount)"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:88:7: Warning: Timestamp Dependency.\n      if (now > time_bought + 1 hours) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6bd33d49d48f76abcd96652e5347e398aa3fda96_BancorBuyer.sol:67:5: Warning: Re-Entrancy Vulnerability.\n    CrowdsaleController(sale).contributeETH.value(this.balance - reward)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:Crowdsale.json": {
+  "evm_code_coverage": "81.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:85:6: Warning: Integer Overflow.\n    function migrateListManual(address [] _who, bool _preico) public onlyOwner {\n    ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:77:10: Warning: Integer Overflow.\n        totalSupply += balance;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:80:14: Warning: Integer Overflow.\n            ++numberOfInvestors;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:192:10: Warning: Integer Overflow.\n        balanceOf[msg.sender] += extraTokens;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:193:10: Warning: Integer Overflow.\n        totalSupply += extraTokens;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:196:14: Warning: Integer Overflow.\n            ++numberOfInvestors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:184:18: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:185:25: Warning: Re-Entrancy Vulnerability.\n        uint balance = BaseERC20(cryptaurToken).balanceOf(this);",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:186:10: Warning: Re-Entrancy Vulnerability.\n        BaseERC20(cryptaurToken).transfer(msg.sender, balance);"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:ProofFund.json": {
+  "evm_code_coverage": "60.7",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:281:6: Warning: Integer Underflow.\n    string  public name        = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:280:6: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:282:6: Warning: Integer Underflow.\n    string  public symbol      = \"PF\";"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:260:23: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:383:27: Warning: Integer Overflow.\n        votingDeadline = now + _votingDurationDays * 1 days;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:405:19: Warning: Integer Overflow.\n        voteId = numberOfVotes++;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:115:6: Warning: Integer Overflow.\n    mapping (address => Investor) public investors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:10: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:242:26: Warning: Re-Entrancy Vulnerability.\n                require(crowdsaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:PendingContributions.json": {
+  "evm_code_coverage": "98.2",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:157:3: Warning: Integer Overflow.\n\t\tcontributions[contributor] += msg.value\nInteger Overflow occurs if:\n    contributions[contributor] = 1\n    owner = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:165:3: Warning: Transaction-Ordering Dependency.\n\t\tmsg.sender.transfer(toTransfer)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:172:3: Warning: Transaction-Ordering Dependency.\n\t\tgateway.fund.value(toTransfer)(contributor)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x7c4393ee129d7856b5bd765c2d20b66f464ccd0f_Crowdsale.sol:172:3: Warning: Re-Entrancy Vulnerability.\n\t\tgateway.fund.value(toTransfer)(contributor)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:PRIVATE_ETH_CELL.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:47:16: Warning: Integer Underflow.\n            if(msg.sender.call.value(_am)()\nInteger Underflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract/0x4e73B32ed6c35F570686b89848E5F39F20ECC106_PRIVATE_ETH_CELL.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:ProofToken.json": {
+  "evm_code_coverage": "76.0",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:206:6: Warning: Integer Underflow.\n    string  public name     = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:248:10: Warning: Integer Underflow.\n        totalSupply -= _value;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:205:6: Warning: Integer Underflow.\n    string  public standard = 'Token 0.1';",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:207:6: Warning: Integer Underflow.\n    string  public symbol   = 'PF';"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:85:6: Warning: Integer Overflow.\n    function migrateListManual(address [] _who, bool _preico) public onlyOwner {\n    ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:77:10: Warning: Integer Overflow.\n        totalSupply += balance;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:80:14: Warning: Integer Overflow.\n            ++numberOfInvestors;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:192:10: Warning: Integer Overflow.\n        balanceOf[msg.sender] += extraTokens;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:193:10: Warning: Integer Overflow.\n        totalSupply += extraTokens;",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:196:14: Warning: Integer Overflow.\n            ++numberOfInvestors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:184:18: Warning: Re-Entrancy Vulnerability.\n        require(msg.sender.call.gas(3000000).value(this.balance)())",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:185:25: Warning: Re-Entrancy Vulnerability.\n        uint balance = BaseERC20(cryptaurToken).balanceOf(this);",
+    "/home/richael/oyente-master/oyente/contract/0x6f3a995e904c9be5279e375e79f3c30105efa618_ProofToken.sol:186:10: Warning: Re-Entrancy Vulnerability.\n        BaseERC20(cryptaurToken).transfer(msg.sender, balance);"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:953:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1063:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:944:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1216:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x7ae79d424b81081990870ce6c606ca762db67676_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:ETH_VAULT.json": {
+  "evm_code_coverage": "98.6",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:35:16: Warning: Integer Underflow.\n            if(msg.sender.call.value(_am)()\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    _am = 0"
+   ],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:35:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract/0x8c7777c45481dba411450c228cb692ac3d550344_ETH_VAULT.sol:38:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:953:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1063:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:944:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1216:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x1ddefcc0cb8b4a6a20bc97c8cf81123b01288c27_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:Token.json": {
+  "evm_code_coverage": "76.1",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:281:6: Warning: Integer Underflow.\n    string  public name        = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:280:6: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:282:6: Warning: Integer Underflow.\n    string  public symbol      = \"PF\";"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:260:23: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:115:6: Warning: Integer Overflow.\n    mapping (address => Investor) public investors;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:76:10: Warning: Integer Overflow.\n        totalSupply += tokens;"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:10: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:242:26: Warning: Re-Entrancy Vulnerability.\n                require(crowdsaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:907:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1006:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumLimit = 1099511627776\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:898:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1113:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1034:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1132:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1034:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:980:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x5b7b37c014c6d1dd74aed790f23494e68f64fa21_PreICOProxyBuyer.sol:1037:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:887:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:986:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumLimit = 1\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:878:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:1093:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:1014:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:1112:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:1014:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:960:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x3b2150afd63266f46fbebbea4964d3b8c69b27eb_PreICOProxyBuyer.sol:1017:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.4",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:910:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1009:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMinimumLimit = 1\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:901:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1116:9: Warning: Transaction-Ordering Dependency.\n    if(!investor.send(amount)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1037:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1135:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1037:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:983:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x6d997edca04282950416fa380d834f360fc36ebb_PreICOProxyBuyer.sol:1040:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:PERSONAL_BANK.json": {
+  "evm_code_coverage": "99.0",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:47:16: Warning: Integer Underflow.\n            if(msg.sender.call.value(_am)()\nInteger Underflow occurs if:\n    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:47:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract/0x01F8c4E3Fa3EdEb29e514cba738D87CE8C091d3f_PERSONAL_BANK.sol:50:17: Warning: Re-Entrancy Vulnerability.\n                Log.AddMessage(msg.sender,_am,\"Collect\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:Proof.json": {
+  "evm_code_coverage": "49.9",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:281:6: Warning: Integer Underflow.\n    string  public name        = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:280:6: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1';"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:260:23: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:383:27: Warning: Integer Overflow.\n        votingDeadline = now + _votingDurationDays * 1 days;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:405:19: Warning: Integer Overflow.\n        voteId = numberOfVotes++;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:115:6: Warning: Integer Overflow.\n    mapping (address => Investor) public investors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:10: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:242:26: Warning: Re-Entrancy Vulnerability.\n                require(crowdsaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:874:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:981:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:1091:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:1009:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:1110:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:1009:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:955:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x2d85707324dd03251ef928d5d8325f28c686ecc9_PreICOProxyBuyer.sol:1012:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:TokenTrader.json": {
+  "evm_code_coverage": "88.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:551:23: Warning: Transaction-Ordering Dependency.\n        else require (msg.sender.send(msg.value)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:510:20: Warning: Transaction-Ordering Dependency.\n            return owner.send(ethers)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x2a5f2d62d58f3a05b554b699fcdd1f832474764d_x888.sol:524:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:PrivateDeposit.json": {
+  "evm_code_coverage": "98.9",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:45:16: Warning: Integer Underflow.\n            if(msg.sender.call.value(_am)()\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    _am = 0"
+   ],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:45:16: Warning: Re-Entrancy Vulnerability.\n            if(msg.sender.call.value(_am)()",
+    "/home/richael/oyente-master/oyente/contract/0x7a8721a9d64c74da899424c1b52acbf58ddc9782_PrivateDeposit.sol:48:17: Warning: Re-Entrancy Vulnerability.\n                TransferLog.AddMessage(msg.sender,_am,\"CashOut\")"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:Forwarder.json": {
+  "evm_code_coverage": "92.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:76:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(this.balance)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:48:10: Warning: Transaction-Ordering Dependency.\n    if (!parentAddress.call.value(msg.value)(msg.data)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5b9e8728e316bbeb692d22daaab74f6cbf2c4691_WalletSimple.sol:76:10: Warning: Re-Entrancy Vulnerability.\n    if (!parentAddress.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:Equio.json": {
+  "evm_code_coverage": "86.7",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:133:7: Warning: Integer Overflow.\n      balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 38918432176037375336616014785763380089390908725563154215495412950065520806561\n    bought_tokens = 0\n    kill_switch = 0\n    sale = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:114:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:62:7: Warning: Transaction-Ordering Dependency.\n      user.transfer(eth_to_withdraw)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:110:13: Warning: Transaction-Ordering Dependency.\n    require(sale.call.value(contract_eth_value)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:96:5: Warning: Timestamp Dependency.\n    require(now < earliest_buy_time)"
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6b9c8c4e246f43cac225a64aee0c50434e61d7a4_EquioGenesis.sol:110:13: Warning: Re-Entrancy Vulnerability.\n    require(sale.call.value(contract_eth_value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:953:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1063:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:944:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1216:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x1d0e79ce3935f2e15b25e1581441b43d8e97db40_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:283:19: Warning: Transaction-Ordering Dependency.\n        else if (!msg.sender.send(msg.value)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:220:20: Warning: Transaction-Ordering Dependency.\n            return owner.send(ethers)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x4bb886b9d601d3690a08d46851843b04b0e254ec_TokenTrader.sol:248:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "82.1",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:906:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:1019:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:896:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:1139:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:1139:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:1180:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:1058:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x4eca34ef140253056621ef9d5bf1f4efdd120a24_PreICOProxyBuyer.sol:993:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:GenericCall.json": {
+  "evm_code_coverage": "99.5",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Integer Underflow.\n    if (destination.call.value(value)(data)",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:307:7: Warning: Integer Underflow.\n      Execution(destination, value, data)\nInteger Underflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:305:3: Warning: Integer Overflow.\n  function execute(address destination, uint value, bytes data) external isAllowed {\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Integer Overflow.\n    if (destination.call.value(value)(data)",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:307:7: Warning: Integer Overflow.\n      Execution(destination, value, data)\nInteger Overflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "83.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:953:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1063:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:944:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1181:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1216:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1102:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x1c2e72abe1a7ca2d058e51872a45b39df5ea6b2a_PreICOProxyBuyer.sol:1037:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:971:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:855:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:864:3: Warning: Integer Overflow.\n  address[] public investors"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:1087:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:1008:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:1106:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:1008:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:945:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x5f8c9b69a2b5290bb8d7f8f549635cea5af34205_PreICOProxyBuyer.sol:1011:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:Burner.json": {
+  "evm_code_coverage": "98.8",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:147:28: Warning: Transaction-Ordering Dependency.\n        uint erc20ToBurn = kyberContract.trade.value(ethToConvert)(\n        ^\nSpanning multiple lines."
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:147:28: Warning: Transaction-Ordering Dependency.\n        uint erc20ToBurn = kyberContract.trade.value(ethToConvert)(\n        ^\nSpanning multiple lines."
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:147:28: Warning: Re-Entrancy Vulnerability.\n        uint erc20ToBurn = kyberContract.trade.value(ethToConvert)(\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x7b3c4d90e8af6030d66c07f8f815f9505e379d6f_Burner.sol:171:9: Warning: Re-Entrancy Vulnerability.\n        destErc20.burn(erc20ToBurn)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "84.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:973:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:857:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:866:3: Warning: Integer Overflow.\n  address[] public investors"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:1092:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:1010:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:1111:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:1010:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:947:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x1d1452a107e2bf2cffba3049464331de8d79c448_PreICOProxyBuyer.sol:1013:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:Stake.json": {
+  "evm_code_coverage": "69.5",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Integer Underflow.\n    if (destination.call.value(value)(data)\nInteger Underflow occurs if:\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:307:7: Warning: Integer Underflow.\n      Execution(destination, value, data)\nInteger Underflow occurs if:\n    isOwner[msg.sender] = 255"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:333:1: Warning: Integer Overflow.\ncontract Stake is Owned, Validating, GenericCall {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    owners.length = 2\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:69:11: Warning: Integer Overflow.\n      if (owners[i]\nInteger Overflow occurs if:\n    owners.length = 13164036458569648337239753460458804039861886925068638906788872192\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:70:21: Warning: Integer Overflow.\n        owners[i] = owners[SafeMath.sub(owners.length, 1)]\nInteger Overflow occurs if:\n    owners.length = 57896044618658097711785492504343953921190474462085266604314798285047736565757\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:70:9: Warning: Integer Overflow.\n        owners[i]\nInteger Overflow occurs if:\n    owners.length = 57896044618658097711785492504343953921190474462085266604314798285047736565757\n    owners[i] = 0\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    owners[i] = 1461501637330902918203684832716283019655932542975\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:82:5: Warning: Integer Overflow.\n    owners.push(_owner)\nInteger Overflow occurs if:\n    isOwner[_owner] = 0\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Integer Overflow.\n    if (destination.call.value(value)(data)\nInteger Overflow occurs if:\n    isOwner[msg.sender] = 255",
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:307:7: Warning: Integer Overflow.\n      Execution(destination, value, data)\nInteger Overflow occurs if:\n    isOwner[msg.sender] = 255"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x1ed8691cea15e9573282175ffa3e23281fce85c0_Stake.sol:306:9: Warning: Re-Entrancy Vulnerability.\n    if (destination.call.value(value)(data)"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:FunFairSale.json": {
+  "evm_code_coverage": "98.5",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:71:13: Warning: Integer Overflow.\n        if (this.balance + msg.value\nInteger Overflow occurs if:\n    capAmount = 1\n    deadline = 1\n    startTime = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:77:9: Warning: Timestamp Dependency.\n        if (block.timestamp < deadline) throw"
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5c84c9dd997e16578e62c9f7557e708db05c1076_FunFairSale.sol:78:14: Warning: Re-Entrancy Vulnerability.\n        if (!owner.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:AutomobileCyberchainToken.json": {
+  "evm_code_coverage": "74.5",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:140:5: Warning: Integer Underflow.\n    string public name = \"Automobile Cyberchain Token\"",
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:141:5: Warning: Integer Underflow.\n    string public symbol = \"AMCC\""
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:101:82: Warning: Integer Overflow.\n        if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 31011907737879846905537130462912155126960895589245379915617170833225066774705\n    allowed[_from][msg.sender] = 88964353373763045885795690415161928411490039952130836214028735836176136306767\n    balances[_from] = 88964353373763045885795690415161928411490039952130836214028735836176136306767",
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:178:59: Warning: Integer Overflow.\n        else if (block.number>=startBlock && block.number<startBlock+prePeriod\nInteger Overflow occurs if:\n    startBlock = 4194304\n    prePeriod = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    endBlock = 115792089237316195423570985008682198862499160826116330895579786027367602847742",
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:90:47: Warning: Integer Overflow.\n        if (balances[msg.sender] >= _value && balances[_to] + _value\nInteger Overflow occurs if:\n    balances[_to] = 66856184261385214108408597654402785422430169472278770250914080072048199204049\n    balances[msg.sender] = 57938452453005874615280298637860938028508748633530783054289495821861177524225"
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x2d51eef741d906084ce3bacaa0e66e4d261fdccf_AutomobileCyberchainToken.sol:195:21: Warning: Re-Entrancy Vulnerability.\n            require(msg.sender.call.value(msg.value - value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x0d8603a39663a29134a8957722a059594e89fa53_RenderTokenInvestment1.sol:RenderTokenInvestment1.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x0d8603a39663a29134a8957722a059594e89fa53_RenderTokenInvestment1.sol:99:13: Warning: Re-Entrancy Vulnerability.\n    require(msg.sender.call.gas(gas).value(address(this).balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "81.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:902:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:1015:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:892:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:1135:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:1135:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:1176:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:1054:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x3c170cf086a9c347ac86f94cecc701fbc81c0418_PreICOProxyBuyer.sol:989:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "81.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:902:3: Warning: Integer Overflow.\n  address[] public investors",
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:1015:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    investors.push(investor) = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    weiMaximumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    weiMinimumLimit = 115792089237316195423569452513147041964411626318613413730273965268756586299391\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:892:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    investors.push(investor) = 49740054206109040296037933044406611210779666031966631179647950273240461442556\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    forcedRefund = 0\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:1135:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:1135:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:1176:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:1054:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaised)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x6e0ae69d262420b8ccd7ecdc11f12bb8b38104fc_PreICOProxyBuyer.sol:989:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:DividendDistributor.json": {
+  "evm_code_coverage": "90.4",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:82:21: Warning: Integer Underflow.\n        dividend = (sumDividend - lastDividend\nInteger Underflow occurs if:\n    investors[msg.sender].lastDividend = 115792089237316195423570985008687907851908855197956810185604085578185788358656\n    sumDividend = 33554427"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:99:9: Warning: Integer Overflow.\n        sumDividend += msg.value\nInteger Overflow occurs if:\n    sumDividend = 1\n    owner = 0",
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:61:13: Warning: Integer Overflow.\n            investors[msg.sender].investment += msg.value\nInteger Overflow occurs if:\n    investors[msg.sender].investment = 89543584855118439291687187646092529606065251340209261873174181394831862889983\n    minInvestment = 82306579331706070424569484146079930342289088062704051215418675662991080259071",
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:62:13: Warning: Integer Overflow.\n            sumInvested += msg.value\nInteger Overflow occurs if:\n    sumInvested = 89543584855118439291687187646092529606065251340209261873174181394831862889983\n    minInvestment = 82306579331706070424569484146079930342289088062704051215418675662991080259071",
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:64:13: Warning: Integer Overflow.\n            investors[msg.sender].lastDividend\nInteger Overflow occurs if:\n    minInvestment = 0"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:53:14: Warning: Transaction-Ordering Dependency.\n        if(! target.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:114:9: Warning: Transaction-Ordering Dependency.\n        selfdestruct(msg.sender)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x7bc51b19abe2cfb15d58f845dad027feab01bfa0_DividendDistributor.sol:53:14: Warning: Re-Entrancy Vulnerability.\n        if(! target.call.value(amount)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:ProofVote.json": {
+  "evm_code_coverage": "67.3",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:281:6: Warning: Integer Underflow.\n    string  public name        = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:280:6: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:282:6: Warning: Integer Underflow.\n    string  public symbol      = \"PF\";"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:260:23: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:383:27: Warning: Integer Overflow.\n        votingDeadline = now + _votingDurationDays * 1 days;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:405:19: Warning: Integer Overflow.\n        voteId = numberOfVotes++;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:115:6: Warning: Integer Overflow.\n    mapping (address => Investor) public investors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:10: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:242:26: Warning: Re-Entrancy Vulnerability.\n                require(crowdsaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:TokenTrader.json": {
+  "evm_code_coverage": "83.9",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:277:19: Warning: Transaction-Ordering Dependency.\n        else if (!msg.sender.send(msg.value)"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:214:20: Warning: Transaction-Ordering Dependency.\n            return owner.send(ethers)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x3cd9b53eab1f941ac39b7a5689d9f516d82f28a9_TokenTraderFactory.sol:242:13: Warning: Re-Entrancy Vulnerability.\n            toTokenTrader.makerDepositEther.value(ethers)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:MyWill.json": {
+  "evm_code_coverage": "25.3",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:880:34: Warning: Integer Underflow.\n            var witnessesList = listWitnesses.toSlice(",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:980:17: Warning: Integer Underflow.\n        return listWitnesses.toSlice(",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:972:10: Warning: Integer Underflow.\n        return (listHeirs, listHeirsPercentages);",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:976:10: Warning: Integer Underflow.\n        return listWitnesses;",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:947:10: Warning: Integer Underflow.\n        SingleTransact(msg.sender, _value, _to, _data);",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:948:10: Warning: Integer Underflow.\n        _to.call.value(_value)(_data);",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:850:18: Warning: Integer Underflow.\n        var s = listWitnesses.toSlice("
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:947:10: Warning: Integer Overflow.\n        SingleTransact(msg.sender, _value, _to, _data);",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:948:10: Warning: Integer Overflow.\n        _to.call.value(_value)(_data);",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:773:6: Warning: Integer Overflow.\n    function setParameters(address _owner, string _listHeirs, string _listHeirsPercentages, string _listWitnesses, address _club, uint256 _gasPrice, uint256 _gasCost) onlySender onlyInit {\n    ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:850:18: Warning: Integer Overflow.\n        var s = listWitnesses.toSlice("
+   ],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6a72b9813003dbda09b6c03ef9f2521086022585_BackToLife.sol:948:10: Warning: Re-Entrancy Vulnerability.\n        _to.call.value(_value)(_data);"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:PreICOProxyBuyer.json": {
+  "evm_code_coverage": "86.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:971:7: Warning: Integer Overflow.\n      investors.push(investor)\nInteger Overflow occurs if:\n    weiMaximumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    weiMinimumLimit = 115792089237316195422001709574841237662311037309838647435431995146522243104767\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:855:1: Warning: Integer Overflow.\ncontract PreICOProxyBuyer is Ownable, Haltable, SafeMath {\n^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    weiMaximumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    weiMinimumLimit = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    freezeEndsAt = 1\n    halted = 0\n    balances[investor] = 0\n    tokensBought = 0",
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:864:3: Warning: Integer Overflow.\n  address[] public investors"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:1087:10: Warning: Transaction-Ordering Dependency.\n    if(!(investor.call.value(amount)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:1008:5: Warning: Transaction-Ordering Dependency.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:1106:7: Warning: Timestamp Dependency.\n      if(now >= freezeEndsAt) {\n      ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:1008:5: Warning: Re-Entrancy Vulnerability.\n    crowdsale.invest.value(weiRaisedTotal)(address(this))",
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:945:12: Warning: Re-Entrancy Vulnerability.\n    return crowdsale.token()",
+    "/home/richael/oyente-master/oyente/contract/0x5e87ede65d71218d710c6f94b9bfcd9017fb292a_PreICOProxyBuyer.sol:1011:20: Warning: Re-Entrancy Vulnerability.\n    tokensBought = getToken().balanceOf(address(this))"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:SFTToken.json": {
+  "evm_code_coverage": "39.3",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6D56fb76d62bBB01cec94612db6bfAd81bF65F3A_SFTToken.sol:286:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:SENSToken.json": {
+  "evm_code_coverage": "40.0",
+  "vulnerabilities": {
+   "integer_underflow": [],
+   "integer_overflow": [],
+   "callstack": [],
+   "money_concurrency": [],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x02ed9b30e7fb4d4e06495c96810aeb2fac8b2989_SENSToken.sol:275:8: Warning: Re-Entrancy Vulnerability.\n\t\tif (!devETHDestination.call.value(this.balance)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:EnjinBuyer.json": {
+  "evm_code_coverage": "91.4",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:91:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    balances[msg.sender] = 2305843009213693952\n    contract_eth_value = 2305843009213693950\n    bought_tokens = 128\n    sale = 0\n    balances_after_buy[msg.sender] = 0",
+    "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:61:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    contract_eth_value = 748288838313422294120286634350736905781262973667326\n    balances[msg.sender] = 748288838313422294120286634350736906063837462005760\n    bought_tokens = 32896\n    sale = 0\n    balances_after_buy[msg.sender] = 0"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:126:7: Warning: Integer Overflow.\n      balances_after_buy[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances_after_buy[msg.sender] = 1\n    bought_tokens = 255",
+    "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:38:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:118:15: Warning: Transaction-Ordering Dependency.\n      require(sale.call.value(contract_eth_value)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:106:13: Warning: Transaction-Ordering Dependency.\n    require(sale.call.value(contract_eth_value)()"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x00a2409f41fdf485afd23599219c60a77524bba2_EnjinBuyer.sol:106:13: Warning: Re-Entrancy Vulnerability.\n    require(sale.call.value(contract_eth_value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:EnjinBuyer.json": {
+  "evm_code_coverage": "91.3",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:89:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[user]\nInteger Underflow occurs if:\n    contract_eth_value = 748288838313422294120286634350736905781262973667326\n    balances[user] = 748288838313422294120286634350736906063837462005760\n    bought_tokens = 32896\n    sale = 0\n    user = 1461501637330902918203684832716283019655932542975\n    balances_after_buy[user] = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:61:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    balances[msg.sender] = 748288838313422294120286634350736906063837462005760\n    contract_eth_value = 748288838313422294120286634350736905781262973667326\n    bought_tokens = 32896\n    sale = 0\n    balances_after_buy[msg.sender] = 0"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:117:7: Warning: Integer Overflow.\n      balances_after_buy[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances_after_buy[msg.sender] = 1\n    bought_tokens = 255",
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:110:7: Warning: Integer Overflow.\n      balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    bought_tokens = 0",
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:38:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:104:13: Warning: Transaction-Ordering Dependency.\n    require(sale.call.value(contract_eth_value)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:82:7: Warning: Transaction-Ordering Dependency.\n      user.transfer(eth_to_withdraw)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x6c1bcb34142bffd35f57db626e0ac427af616a4d_EnjinBuyer.sol:104:13: Warning: Re-Entrancy Vulnerability.\n    require(sale.call.value(contract_eth_value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:EnjinBuyer.json": {
+  "evm_code_coverage": "91.1",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:91:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    balances[msg.sender] = 2305843009213693952\n    contract_eth_value = 2305843009213693950\n    bought_tokens = 128\n    sale = 0\n    balances_after_buy[msg.sender] = 0",
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:61:7: Warning: Integer Underflow.\n      contract_eth_value -= balances[msg.sender]\nInteger Underflow occurs if:\n    balances[msg.sender] = 748288838313422294120286634350736906063837462005760\n    contract_eth_value = 748288838313422294120286634350736905781262973667326\n    bought_tokens = 32896\n    sale = 0\n    balances_after_buy[msg.sender] = 0"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:119:7: Warning: Integer Overflow.\n      balances_after_buy[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances_after_buy[msg.sender] = 1\n    bought_tokens = 255",
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:112:7: Warning: Integer Overflow.\n      balances[msg.sender] += msg.value\nInteger Overflow occurs if:\n    balances[msg.sender] = 1\n    bought_tokens = 0",
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:38:3: Warning: Integer Overflow.\n  function activate_kill_switch(string password) {\n  ^\nSpanning multiple lines.\nInteger Overflow occurs if:\n    password = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:106:13: Warning: Transaction-Ordering Dependency.\n    require(sale.call.value(contract_eth_value)()"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:85:7: Warning: Transaction-Ordering Dependency.\n      msg.sender.transfer(eth_to_withdraw)"
+    ]
+   ],
+   "time_dependency": [],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x2d52d1517f47e1ab7be6377a1f11fbd2c49978db_EnjinBuyer.sol:106:13: Warning: Re-Entrancy Vulnerability.\n    require(sale.call.value(contract_eth_value)()"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ },
+ "0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:TokenMigration.json": {
+  "evm_code_coverage": "62.9",
+  "vulnerabilities": {
+   "integer_underflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:281:6: Warning: Integer Underflow.\n    string  public name        = 'PROOF';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:280:6: Warning: Integer Underflow.\n    string  public standard    = 'Token 0.1';",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:282:6: Warning: Integer Underflow.\n    string  public symbol      = \"PF\";"
+   ],
+   "integer_overflow": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:260:23: Warning: Integer Overflow.\n        uint value = investors[msg.sender].amountWei;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:383:27: Warning: Integer Overflow.\n        votingDeadline = now + _votingDurationDays * 1 days;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:405:19: Warning: Integer Overflow.\n        voteId = numberOfVotes++;",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:115:6: Warning: Integer Overflow.\n    mapping (address => Investor) public investors;"
+   ],
+   "callstack": [],
+   "money_concurrency": [
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ],
+    [
+     "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:263:22: Warning: Transaction-Ordering Dependency.\n            require(msg.sender.call.gas(3000000).value(value)())"
+    ]
+   ],
+   "time_dependency": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:18: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines.",
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:210:10: Warning: Timestamp Dependency.\n        require(now >= crowdsaleFinishTime || collectedUSD == totalLimitUSD ||\n        ^\nSpanning multiple lines."
+   ],
+   "reentrancy": [
+    "/home/richael/oyente-master/oyente/contract/0x5B5d8A8A732A3c73fF0fB6980880Ef399ecaf72E_Proof.sol:242:26: Warning: Re-Entrancy Vulnerability.\n                require(crowdsaleOwner.call.gas(3000000).value(this.balance)())"
+   ],
+   "assertion_failure": [],
+   "parity_multisig_bug_2": []
+  }
+ }
+}
